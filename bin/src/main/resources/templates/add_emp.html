@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Employee Management System</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a th:href="@{/employee}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Home</a>
+    <a th:href="@{/employee/view}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Employee List</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Add Employee</a>
+  </div>
+
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>Employee Management System <br></br> </h1>
+
+        <form action="#" th:action="@{/employee/add}" th:object="${employee}"
+			method="POST">
+			<input type="text" th:field="*{name}"
+				placeholder="Name" class="form-control mb-4 col-5">
+				
+				<input type="text" th:field="*{dateOfhiring}"
+				placeholder="Date of Hiring (yyyy-mm-dd)" class="form-control mb-4 col-5">
+				
+				<input type="text" th:field="*{department}"
+				placeholder="Department" class="form-control mb-4 col-5">
+				
+				<input type="text" th:field="*{job_title}"
+				placeholder="Job Title" class="form-control mb-4 col-5">
+				
+				<button type="submit" class="btn btn-info col-5">Save</button>
+		</form>
+		
+		<hr>
+		
+		<a th:href = "@{/employee/view}"> Back to Student List</a>
+  
+        
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
