@@ -26,3 +26,5 @@ VALUES
 ("Olivia Taylor", "2025-01-08", "IT", "System Analyst", "Blacklist"),
 ("William Robinson", "2024-03-22", "Finance", "Financial Planner", "Normal")
 ```
+
+- Click [Here](https://drive.google.com/file/d/15TfPLyt9FiCRdImCn3rWt51lIlYp0RSL/view?usp=drive_link) to see our Slide Presentation
