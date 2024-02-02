@@ -24,7 +24,7 @@ VALUES
 ("Emma Davis", "2025-04-05", "Marketing", "Content Writer", "Normal"),
 ("Andrew Miller", "2024-11-12", "HR", "Recruiter", "Normal"),
 ("Olivia Taylor", "2025-01-08", "IT", "System Analyst", "Blacklist"),
-("William Robinson", "2024-03-22", "Finance", "Financial Planner", "Normal")
+("William Robinson", "2024-03-22", "Finance", "Financial Planner", "Normal");
 ```
 
 - Click [Here](https://drive.google.com/file/d/15TfPLyt9FiCRdImCn3rWt51lIlYp0RSL/view?usp=drive_link) to see our Slide Presentation
